@@ -1,0 +1,11 @@
+Processo de HOTFIX
+
+git cherry-pick
+
+GIT Avançado
+Materiais sobre CI - Continuous Integration (Integração Continua)
+DevOps -> Development Operations 
+
+
+Sugestão:
+aprender um pouco sobre o editor VI
