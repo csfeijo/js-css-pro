@@ -1,0 +1,34 @@
+body {
+  background: #002244;
+}
+
+div {
+  color: white;
+}
+
+div::before {
+  content: "";
+  border-left: 3px solid orange;
+  width: 10px;
+  height: 13px;
+  background: white;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+div::after {
+  content: " - Porto Alegre / RS";
+}
+
+/* esse ex. nao funciona - pois o pseudo elemento after não possui pseudo prop. hover */
+div::after:hover {
+  background: red;
+}
+
+/* funciona pois o after é ref. a DIV e o hover tambem. Os pseudo elementos são sempre os ultimos a serem acessados */
+div:hover::after {
+  background: red;
+  border-bottom: 1px dashed white;
+}
+
+

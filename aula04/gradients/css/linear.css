@@ -1,0 +1,31 @@
+:root {
+  --cor-qualquer: #FF9900;
+  --colorido: linear-gradient(red, var(--cor-qualquer));
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  /* se aplicarmos o bg direto no body ocorre uma "segmentação / repeticao" - 
+     efeito colateral */
+  background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+div {
+  width: 400px;
+  height: 400px;
+  border: 1px solid red;
+  border-radius: 50%;
+
+
+  /* background: linear-gradient(red, #0066CC, var(--cor-qualquer)); */
+  /* background: var(--colorido), var(--cor-qualquer); */
+  background: linear-gradient(45deg, red 20%, yellow, violet);
+}
+
+div:hover {
+  background: linear-gradient(180deg, red 20%, yellow, violet);
+}
