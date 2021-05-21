@@ -16,6 +16,18 @@ Conteúdo deste repositório:
 * [Shape Divider](https://www.shapedivider.app/)
 
 
+## Extensões legais do VSCode
+* Indent Rainbow
+* Color Highlight
+
+## UI Interessantes
+https://dogstudio.co/
+http://melanie-f.com/en/
+https://jetcrazy.com.br/
+
+
+
+
 ## Instrutor
 Cícero da Silva Feijó
 
