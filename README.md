@@ -19,14 +19,12 @@ Conteúdo deste repositório:
 ## Extensões legais do VSCode
 * Indent Rainbow
 * Color Highlight
+* Go Live
 
 ## UI Interessantes
-https://dogstudio.co/
-http://melanie-f.com/en/
-https://jetcrazy.com.br/
-
-
-
+* [Dog Studio - Parallax](https://dogstudio.co/)
+* [Melanie - Parallax](http://melanie-f.com/en/)
+* [Jet Crazy - Parallax Banner](https://jetcrazy.com.br/)
 
 ## Instrutor
 Cícero da Silva Feijó
