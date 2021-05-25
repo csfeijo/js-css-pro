@@ -14,6 +14,12 @@ Conteúdo deste repositório:
 * [CSS Gradients Generator](https://cssgradient.io/)
 * [Color Hunt](https://colorhunt.co/)
 * [Shape Divider](https://www.shapedivider.app/)
+* [BEM Cheat Sheet](https://9elements.com/bem-cheat-sheet/)
+* [OverAPI - Consulta de Comandos](https://overapi.com/)
+* [Who Can Use - Usabilidade](https://whocanuse.com/)
+* [Huge comments generator](https://codepen.io/sakri/pen/Iklgx)
+## API´s
+* [Public API](https://github.com/public-apis/public-apis)
 
 
 ## Extensões legais do VSCode
