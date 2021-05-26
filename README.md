@@ -7,6 +7,10 @@ Conteúdo deste repositório:
 * CSS
 * JS
 
+## Extensões interessantes
+* Settings Sync - sincroniza as preferências do VSCode usando as credenciais do GitHub
+
+
 ## Links úteis
 * [Roda de Cores da Adobe](https://color.adobe.com/pt/create/color-wheel)
 * [Contrast Ratio - Lea Verou](https://contrast-ratio.com/)
@@ -18,6 +22,10 @@ Conteúdo deste repositório:
 * [OverAPI - Consulta de Comandos](https://overapi.com/)
 * [Who Can Use - Usabilidade](https://whocanuse.com/)
 * [Huge comments generator](https://codepen.io/sakri/pen/Iklgx)
+* [CSS 3D transform samples](https://polypane.app/css-3d-transform-examples/)
+* [CSS 3D transform samples - 2](https://1stwebdesigner.com/css-effects/)
+* [Efeito Neon em CSS - passo a passo](https://css-tricks.com/how-to-create-neon-text-with-css/)
+
 ## API´s
 * [Public API](https://github.com/public-apis/public-apis)
 

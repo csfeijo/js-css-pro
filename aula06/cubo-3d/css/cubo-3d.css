@@ -1,5 +1,8 @@
+body {
+  background: #002244;
+}
+
 .container {
-  border: 1px solid red;
   width: 400px;
   height: 400px;
   margin: 0 auto;
@@ -11,17 +14,17 @@
 }
 
 #cubo {
-  border: 1px solid purple;
-  width: 100px;
-  height: 100px;  
+  width: 200px;
+  height: 200px;  
 }
 
 .face {
-  border: 1px solid orange;
-  width: 100px;
-  height: 80px;
+  border: 2px dotted white;
+  border-radius: 10px;
+  width: 200px;
+  height: 140px;
   font-size: 60px;
-  padding-top: 20px;
+  padding-top: 60px;
   text-align: center;
 
   position: absolute;
@@ -57,7 +60,22 @@
   transform: rotateX(-90deg) translateZ(50px);
 }
 
+/* ROTACAO */
+#cubo {
+  transform-style: preserve-3d;
 
+  animation-name: gira;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes gira {
+  to {
+    transform: rotate3d(1, 0, 1, 360deg);
+  }
+}
 
 
 
