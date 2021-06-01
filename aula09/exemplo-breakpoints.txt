@@ -1,0 +1,8 @@
+Breakpoints mais comuns para media queriyes:
+  xsMin: '480px',
+  xsMax: '767px',
+  smMin: '768px',
+  smMax: '991px',
+  mdMin: '992px',
+  mdMax: '1199px',
+  lgMin: '1200px',
