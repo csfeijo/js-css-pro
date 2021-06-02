@@ -27,6 +27,9 @@ Conteúdo deste repositório:
 * [Efeito Neon em CSS - passo a passo](https://css-tricks.com/how-to-create-neon-text-with-css/)
 * [Flex Froggy - aprenda Display Flex jogando](http://flexboxfroggy.com/#pt-br)
 * [Unidades de CSS moderno](https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/)
+* [Glassmorphism - CSS](https://uxdesign.cc/glassmorphism-in-user-interfaces-1f39bb1308c9)
+* [Glassmorphism - CSS Generator](https://glassmorphism.com/)
+* [Glassmorphism - Tutorial by Gabriela Pinheiro](https://www.youtube.com/watch?v=ufX9oxoKMsQ)
 ## API´s
 * [Public API](https://github.com/public-apis/public-apis)
 
