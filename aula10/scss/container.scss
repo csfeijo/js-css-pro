@@ -1,0 +1,61 @@
+.container {
+  width: 640px;
+  height: 480px;
+  border: 2px solid white;
+  
+  @include borda-redonda();
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .foto {
+    width: 156px;
+    height: 156px;
+    border: 1px dashed $branco;
+    // as variaveis não são acessiveis dentro de funcoes do CSS por exemplo
+    // gerando um erro de sintaxe, portanto precisamos usar a "interpolação"
+    // para realizar a substituicao do seu valor no SASS
+    background: url(../img/#{$foto});
+    background-size: contain;
+    margin-bottom: 20px;
+
+    @include borda-redonda();
+    @include sombra($cor: green, $y: 14px);
+  }
+
+  button {
+    background: $laranja;
+
+    @include botao-custom() {
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+    };
+
+    // QUANDO é alguma prop. que se refere ao ELEMENTO pai, usamos o &
+    &:hover {
+      background: $fundo;
+      color: $laranja;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    color: $branco;
+
+    &.curso {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    &.local {
+      font-style: italic;
+    }
+  }
+}

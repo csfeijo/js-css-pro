@@ -1,0 +1,21 @@
+@mixin borda-redonda {
+  border-radius: 10px;
+}
+
+// quando um mixin necessita receber mais de um argumento
+// precisamos passar TODOS os argumentos SEMPRE na ordem esperada!
+// se voce quiser passar um argumento VAZIO utilize o valor: null
+// Se voce quiser passar apenas UM dos argumentos ou em uma ordem diferente da esperada
+// voce devera passar os argumentos NOMEADOS (Ex.: sombra($cor: green, $y: 12px, $x: 25px)
+@mixin sombra($x: 2px, $y: 2px, $cor: red) {
+  box-shadow: $x $y 2px 2px $cor;
+}
+
+@mixin botao-custom {
+  padding: 8px;
+  font-family: Arial;
+  border: 1px solid $branco;
+  box-shadow: none;
+
+  @content;
+}
