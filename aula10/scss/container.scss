@@ -27,6 +27,20 @@
 
     @include borda-redonda();
     @include sombra($cor: green, $y: 14px);
+
+
+
+    @media screen and (max-width: 700px) {
+      @include bolinha-ou-quadrado(true) {
+        border: 3px dotted white;
+      };
+    }
+
+    @media screen and (max-width: 500px) {
+      @include bolinha-ou-quadrado() {
+        border: 6px dashed yellow;
+      };
+    }
   }
 
   button {
@@ -57,5 +71,24 @@
     &.local {
       font-style: italic;
     }
+  }
+}
+
+// lista em sass
+// yellow, greenyellow
+// cores com nomes muito grandes pode ocorrer do Koala gerar o nome como hexadecimal
+// no formato de compilação "compressed"
+$cores: red, orange, purple, brown;
+
+@each $cor in $cores {
+  .item-#{$cor} {
+    background: $cor;
+  }
+}
+
+// for
+@for $i from 1 through 3 {
+  li:nth-child(#{$i}) {
+    background: red;
   }
 }

@@ -1,0 +1,29 @@
+Exemplo de organização de projeto (menu e navbar sao arquivos comuns em todas as paginas)
+
+menu.scss
+navbar.scss
+
+contato.scss
+  dentro dela:
+  @import menu.scss
+  @import navbar.scss
+vai configurar o Koala para gerar um arquivo : contato.css dentro da pasta CSS
+
+
+home.scss
+  dentro dela:
+  @import menu.scss
+  @import navbar.scss
+vai configurar o Koala para gerar um arquivo : home.css dentro da pasta CSS
+
+OUTRA ALTERNATIVA
+geral.scss
+   @import menu.scss
+   @import navbar.scss
+Voce incluiria dentro do home.html o arquivo (geral.css gerado pelo Koala) e tambem abaixo dele um arquivo chamado home.css (gerado pelo Koala mas que contem APENAS as definicoes da home page)
+
+
+TERCEIRA:
+main.scss
+   ter todos os css´s em um unico arquivo (porém penalizaria o usuario fazendo o browser carregar TODAS
+as definicoes de CSS em uma unica vez)

@@ -30,6 +30,8 @@ Conteúdo deste repositório:
 * [Glassmorphism - CSS](https://uxdesign.cc/glassmorphism-in-user-interfaces-1f39bb1308c9)
 * [Glassmorphism - CSS Generator](https://glassmorphism.com/)
 * [Glassmorphism - Tutorial by Gabriela Pinheiro](https://www.youtube.com/watch?v=ufX9oxoKMsQ)
+* [Scout App - Alternativa ao Koala / SASS](https://scout-app.io/)
+
 ## API´s
 * [Public API](https://github.com/public-apis/public-apis)
 

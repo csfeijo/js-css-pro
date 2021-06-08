@@ -13,9 +13,30 @@
 
 @mixin botao-custom {
   padding: 8px;
-  font-family: Arial;
+  font-family: Courier;
   border: 1px solid $branco;
   box-shadow: none;
 
   @content;
 }
+
+@mixin bolinha-ou-quadrado ($bolinha: false) {
+  @if $bolinha {
+    border-radius: 50%;
+  } else {
+    border-radius: 0;
+  }
+
+  @content;
+}
+
+
+
+
+
+
+
+
+
+
+

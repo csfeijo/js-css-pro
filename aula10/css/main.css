@@ -1,70 +1,84 @@
 html, body {
   height: 100%;
-  margin: 0;
-}
+  margin: 0; }
 
 body {
   background: #002244;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-body .container {
-  width: 640px;
-  height: 480px;
-  border: 2px solid white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body .container h1 {
-  color: white;
-  text-align: center;
-}
-body .container .foto {
-  width: 156px;
-  height: 156px;
-  border: 1px dashed white;
-  background: url(../img/medico.png);
-  background-size: contain;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 14px 2px 2px green;
-}
-body .container button {
-  background: orange;
-  padding: 8px;
-  font-family: Arial;
-  border: 1px solid white;
-  box-shadow: none;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-}
-body .container button:hover {
-  background: #002244;
-  color: orange;
-  cursor: pointer;
-}
-body .container p {
-  color: white;
-}
-body .container p.curso {
-  font-size: 24px;
-  font-weight: bold;
-}
-body .container p.local {
-  font-style: italic;
-}
-body footer {
-  background: orange;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  color: white;
-  text-align: center;
-}
+  justify-content: center; }
+  body .container {
+    width: 640px;
+    height: 480px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .container h1 {
+      color: white;
+      text-align: center; }
+    body .container .foto {
+      width: 156px;
+      height: 156px;
+      border: 1px dashed white;
+      background: url(../img/medico.png);
+      background-size: contain;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 14px 2px 2px green; }
+      @media screen and (max-width: 700px) {
+        body .container .foto {
+          border-radius: 50%;
+          border: 3px dotted white; }
+          body .container .foto else {
+            border-radius: 0; } }
+      @media screen and (max-width: 500px) {
+        body .container .foto {
+          border: 6px dashed yellow; }
+          body .container .foto else {
+            border-radius: 0; } }
+    body .container button {
+      background: orange;
+      padding: 8px;
+      font-family: Courier;
+      border: 1px solid white;
+      box-shadow: none;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold; }
+      body .container button:hover {
+        background: #002244;
+        color: orange;
+        cursor: pointer; }
+    body .container p {
+      color: white; }
+      body .container p.curso {
+        font-size: 24px;
+        font-weight: bold; }
+      body .container p.local {
+        font-style: italic; }
+  body .item-red {
+    background: red; }
+  body .item-orange {
+    background: orange; }
+  body .item-purple {
+    background: purple; }
+  body .item-brown {
+    background: brown; }
+  body li:nth-child(1) {
+    background: red; }
+  body li:nth-child(2) {
+    background: red; }
+  body li:nth-child(3) {
+    background: red; }
+  body footer {
+    background: orange;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
