@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--  -->
+  <p id="nome"></p>
+  <p id="preco"></p>
+  <p id="marca"></p>
+
+  <script>
+    var produto = {
+      nome: "Televisão",
+      preco: 1599.66,
+      marca: "LG"
+    };
+
+    // Seguindo a estrutura JSON acima, implemente um HTML VAZIO,
+    // e popule os elementos com os dados do JSON.
+    // DICA: document.getElementById
+    var nome = document.getElementById('nome');
+    nome.innerHTML = produto.nome;
+
+    var preco = document.getElementById('preco');
+    preco.innerHTML = 'R$ ' + produto.preco;
+
+    var marca = document.getElementById('marca');
+    marca.innerHTML = produto.marca;
+
+  </script>
+</body>
+
+</html>
