@@ -1,10 +1,10 @@
-function carregaDados() {
+function carregaDados(arquivo) {
   var httpRequest = new XMLHttpRequest();
 
   // NA VOLTA CHAMA: callback
   httpRequest.onload = mostraDados;
   // Requisita o arquivo / endereço
-  httpRequest.open('GET', 'produtos.html', true);
+  httpRequest.open('GET', arquivo, true);
 
   // send: caso queriamos enviar algum dado (via GET) para o produtos.html
   httpRequest.send(null);
@@ -20,7 +20,14 @@ function mostraDados() {
 
 // Automatizando um botao para fazer o Ajax
 var btnProdutos = document.getElementById('btn-produtos');
-btnProdutos.addEventListener('click', carregaDados);
+btnProdutos.addEventListener('click', function () {
+  carregaDados('produtos.html');
+});
+
+var btnCarros = document.getElementById('btn-carros');
+btnCarros.addEventListener('click', function () {
+  carregaDados('carros.html');
+});
 
 
 
