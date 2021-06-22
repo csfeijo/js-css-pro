@@ -1,5 +1,8 @@
 var mostraTodosOsDados = document.querySelector("#lista-dados");
 var botaoEnviarDados = document.querySelector("#enviar");
+var validaStatus = document.querySelector("#status");
+
+console.log("Valida Status>> ", validaStatus);
 
 var chamada = new XMLHttpRequest();
 const url = "https://608850faa6f4a3001742632f.mockapi.io/api/v1/Produtos";
@@ -20,8 +23,8 @@ function enviarDados() {
   chamada.open("POST", url, true);
   chamada.setRequestHeader("Content-type", "application/json;charset=UTF-8");
 
-  var nome = document.querySelector("#nome").value;
-  var preco = document.querySelector("#preco").value;
+  var nomeInput = document.querySelector("#nome").value;
+  var precoInput = document.querySelector("#preco").value;
 
   chamada.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 201) {
@@ -31,18 +34,41 @@ function enviarDados() {
 
   chamada.send(
     JSON.stringify({
-      nome: nome,
-      preco: preco,
+      nome: nomeInput,
+      preco: precoInput,
     })
   );
 }
 
 function pegaValor() {
-  chamada.open("GET", url, true);
+  if (navigator.onLine) {
+    console.log("verifica se está online", navigator.onLine);
+    validaStatus.innerHTML = '<p style="color:green">Online</p>';
+    chamada.open("GET", url, true);
+    chamada.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status === 200) {
+        var arrayDeProdutos = JSON.parse(this.responseText);
+        window.localStorage.setItem(
+          "produtos",
+          JSON.stringify(arrayDeProdutos)
+        );
+        mostraArray(arrayDeProdutos);
+      }
+    };
+    chamada.send(null);
+  } else {
+    validaStatus.innerHTML = '<p style="color:red">Offline</p>';
+
+    var valorLocalStorage = window.localStorage.getItem("produtos");
+    mostraArray(JSON.parse(valorLocalStorage));
+  }
+}
+
+function Delete(id) {
+  chamada.open("DELETE", url + "/" + id, true);
   chamada.onreadystatechange = function () {
-    if (this.readyState === 4 && this.status === 200) {
-      var arrayDeProdutos = JSON.parse(this.responseText);
-      mostraArray(arrayDeProdutos);
+    if (this.readyState == 4 && this.status == 200) {
+      pegaValor();
     }
   };
   chamada.send(null);
@@ -65,7 +91,9 @@ function mostraArray(array) {
       array[i].descricao +
       '</p><p class="loja">' +
       array[i].loja +
-      "</p></div>";
+      '</p><button id="' +
+      array[i].id +
+      '"onClick=Delete(this.id)  >Remover Items</button></div>';
   }
   document.getElementById("lista-de-produtos").innerHTML = saida;
 }
