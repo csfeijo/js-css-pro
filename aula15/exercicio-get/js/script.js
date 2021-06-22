@@ -2,8 +2,6 @@ var mostraTodosOsDados = document.querySelector("#lista-dados");
 var botaoEnviarDados = document.querySelector("#enviar");
 var validaStatus = document.querySelector("#status");
 
-console.log("Valida Status>> ", validaStatus);
-
 var chamada = new XMLHttpRequest();
 const url = "https://608850faa6f4a3001742632f.mockapi.io/api/v1/Produtos";
 
