@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Filter Reduce</title>
+</head>
+<body>
+
+
+    <h1>Map Filter Reduce</h1>
+
+    <script>
+
+    //     const carros = ["Ford", "Fiat", "Honda"]
+
+    //     const listaCarros= carros.map( item =>{
+    //         console.log(item);
+    //         return `Carro ${item}`
+    //     })
+
+    //     console.log(carros);
+    //     console.log(listaCarros);
+
+    //     const numero = [2,4,6,8,10,14,16];
+
+    // const numerosX3 = numero.map( pastel => pastel*10);
+
+    // console.log(numerosX3);
+
+
+    const aulas = [
+        {
+            nome:'html 1',
+            tempo: 60,
+            correto: false
+        },
+        {
+            nome:'html 2',
+            tempo: 85,
+            correto: false
+        },
+        {
+            nome:'CSS 1',
+            tempo: 1000,
+            correto: true
+        },
+        {
+            nome:'CSS 2',
+            tempo: 58,
+            correto: true
+
+        },
+        {
+            nome:'js 1',
+            tempo: 180,
+            correto: true
+
+        },
+        {
+            nome:'js 2',
+            tempo: 5,
+            correto: true
+        },
+        {
+            nome:'js 3',
+            tempo: 20,
+            correto: true
+
+        },
+    ]
+
+    // const tempoDeAula = aulas.map(item => item.nome)
+
+    // console.log(tempoDeAula);
+
+    // const frutas = ['banana', 'banana', undefined, null, '','uva', 0, 'Maçã' ];
+
+    // const  arrayLimpa = frutas.filter(frutas =>{
+    //     return frutas
+    // })
+
+    // const arrayLimpa = frutas.filter(frutas => frutas === 'banana')
+
+
+    // const numero = [2,4,6,8,10,14,16];
+
+    // const buscaMaior =  numero.filter( numero => numero>=10)
+
+    // console.log(buscaMaior);
+
+
+    const filtraAulas =  aulas.filter( x =>{
+        return x.tempo >58
+    })
+
+
+    console.log(">>>",filtraAulas);
+
+
+
+    // console.log(arrayLimpa);
+
+     
+
+
+    </script>
+    
+</body>
+</html>

@@ -48,6 +48,7 @@ Conteúdo deste repositório:
 
 ## Instrutor
 Cícero da Silva Feijó
+Abner Borda Fonseca
 
 Site: [Professor Feijó](http://professorfeijo.com.br)
 
