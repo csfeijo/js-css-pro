@@ -69,32 +69,31 @@
     //     type: "louco",
     //   };
 
-    //   const cliente = {
-    //     nome: "Andre",
-    //     compras: {
-    //       digitais: {
-    //         livros: ["Livro 1", "Livro 2"],
-    //         videos: ["Video JS", "Video HTML"],
-    //       },
-    //       fisicas: {
-    //         cadernos: ["Caderno 1"],
-    //       },
-    //     },
-    //   };
+      const cliente = {
+        nome: "Andre",
+        compras: {
+          digitais: {
+            livros: ["Livro 1", "Livro 2"],
+            videos: ["Video JS", "Video HTML"],
+          },
+          fisicas: {
+            cadernos: ["Caderno 1"],
+          },
+        },
+      };
 
-    //   console.log(carro.marca, carro.ano);
+      const {nome} = cliente
+      const {digitais, fisicas} = cliente.compras
+
+      const { marca, ano } = carro;
+      const { tipo } = carro.dados.cor;
+      const { type } = roupa;
 
 
-    //   const {nome} = cliente
-    //   const {digitais, fisicas} = cliente.compras
 
-    //   const { marca, ano } = carro;
-    //   const { tipo } = carro.dados.cor;
-    //   const { type } = roupa;
+      console.log(digitais.livros[1], fisicas);
 
-    //   console.log(digitais.livros[1], fisicas);
 
-    
     </script>
   </body>
 </html>
